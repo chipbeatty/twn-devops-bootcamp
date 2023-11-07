@@ -50,8 +50,53 @@ Some Types of Nexus Repositories:
 
 4. Docker Repository: Used for hosting Docker container images.
 
-Upload Jar File to Nexus
+Upload Jar File to Nexus for
 
 1. Create Nexus user
 2. Created role (nx-view-maven-snapsots-\*) called nx-java
 3. Assigned role to user
+4. In the java-app project, add:
+
+For java-app project:
+
+- add plugin in gradle.properties so we can publish to nexus
+- gradle.properties with username and password updated
+- update url for nexus repo (maven-snapshot) with my url
+- in the settings.gradle file update name of project
+
+For java-maven-app:
+
+- add maven-deploy-plugin in pom.xml
+- add distributionManagement and I entered my nexus url
+- settup credentials in the .m2 folder of my mac
+  -- using vim created a settings.xml file and added:
+  ```xml
+  <settings>
+  <servers>
+    <server>
+      <id>nexus-snapshots</id>
+      <username>xxxxxx</username>
+      <password>xxxxxxxx</password>
+    </server>
+  </servers>
+  </settings>
+  ```
+- in the terminal ran mvn package
+- ran mvn deploy to publish to nexus repository
+
+Nexus REST API:
+run curl -u user:password -X GET 'http://100.27.4.254:8081/service/rest/v1/repositories' to get list of repositories from nexus that role allows us to see
+
+Blob Store
+is a fundamental component that plays a crucial role in managing and storing binary artifacts and their associated metadata. It is responsible for storing the physical files (blobs) that make up the artifacts in the repositories hosted by Nexus.
+
+Component
+
+1. A logical unit of code or a build artifact.
+2. A high-level concept in Nexus that may consist of one or more related files or assets
+
+Asset:
+
+1. The individual file in the nexus repository
+
+You can create a Cleanup Policy in Nexus but for now I am keeping the projects as is for future sections of the bootcamp
