@@ -1,4 +1,25 @@
-7 - Containers with Docker
+# 7 - Containers with Docker
+
+> [!NOTE]
+> Notes listed below the following screenshots
+
+Screenshots of my work:
+
+![docker image](/images/07/ecr-1.png)
+
+![docker image](/images/07/docker-1.png)
+
+![docker image](/images/07/docker-2.png)
+
+![docker image](/images/07/docker-3.png)
+
+![docker image](/images/07/docker-4.png)
+
+![docker image](/images/07/docker-5.png)
+
+![docker image](/images/07/docker-6.png)
+
+![docker image](/images/07/docker-7.png)
 
 A Docker container is a:
 

@@ -1,8 +1,13 @@
-5 - Cloud & Infrastructure as Service Basics with DigitalOcean
+# 5 - Cloud & Infrastructure as Service Basics with DigitalOcean
+
+> [!NOTE]
+> Notes listed below the following screenshots
+
+![java-react image](/images/05/java-react-example.png)
 
 Instead of using Digital Ocean, I created a ec2 instance.
 
-1. Create lateest Ubuntu ec2 instance
+1. Create latest Ubuntu ec2 instance
 2. Created .pem key and used chmod 400 to set up permissions.
 3. Used new security group that allowed access from kports 22, 80 and 443
 4. Was able to ssh into instance

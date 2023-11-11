@@ -1,4 +1,17 @@
-6 - Artifact Repository Manager with Nexus
+# 6 - Artifact Repository Manager with Nexus
+
+> [!NOTE]
+> Notes listed below the following screenshots
+
+![maven image](/images/06/maven-1.png)
+
+![nexus image](/images/06/nexus-1.png)
+
+![nexus image](/images/06/nexus-2.png)
+
+![nexus image](/images/06/nexus-3.png)
+
+![nexus image](/images/06/nexus-4.png)
 
 1. Created ec2 instance (8 gigs of memory and 30 gigs storage)
 2. Created security group

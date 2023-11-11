@@ -1,3 +1,5 @@
+# 03 - Version Control with Git
+
 Best Practices for GitHub:
 
 1. **Commit changes often**: Don't check-in large amount of changes at once.

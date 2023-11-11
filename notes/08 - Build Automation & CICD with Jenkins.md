@@ -1,4 +1,11 @@
-8 - Build Automation & CI/CD with Jenkins
+# 8 - Build Automation & CI/CD with Jenkins
+
+> [!NOTE]
+> Notes listed below the following screenshots
+
+![jenkins image](/images/08/jenkins-1.png)
+
+![jenkins image](/images/08/jenkins-2.png)
 
 2 Ways to Install Jenkins
 
@@ -60,4 +67,40 @@ Create Freestyle Project (my-job)
 - select version created (maven-3.9)
 - add --version command for Goals section
 
-4. Built proram successfully
+4. Built program successfully
+5. Installed node from Plugins section
+
+Link Jenkins with Github
+Github no longer accepts username and password to authenticate with Jenkins
+Must set up personal access token
+
+1. In Github, go to github->settings ->Developer Settings ->Personal access tokens ->Create new token
+2. Copy the token and go back to Jenkins
+3. Copy the token in the password column, add the name in the ID column and add
+4. Select the created credential
+5. Specify the repository and save it
+
+Adding Docker to Jenkins Container
+
+1. Stopped the container
+2. Attached volume:
+3. ```
+   sudo docker exec -u 0 -it c125e57d9de8 bash
+   ```
+
+````
+4. ```
+curl https://get.docker.com/ > dockerinstall && chmod 777 dockerinstall && ./dockerinstall
+````
+
+5. Set permissions
+
+```
+chmod 666 /var/run/docker.sock
+```
+
+6. Log in as Jenkins user
+
+```
+docker exec -it c125e57d9de8 bash
+```
